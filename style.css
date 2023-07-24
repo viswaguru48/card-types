@@ -1,0 +1,245 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+h1{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 50px;
+    color: rgb(255, 255, 255);
+    background-color: #8a0073;
+    
+}
+
+
+/* product card code start */
+
+.container1{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100vw;
+    height: 400px;
+    background-color: rgb(255, 255, 255);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    padding: 10px;
+}
+
+
+.product img{
+    width: 100px;
+    height: 100px;
+}
+
+.card1{
+    border: 3px solid #00770a;
+    border-radius: 10px;
+    width: 200px;
+    padding: 20px;
+    box-shadow: 0px 5px 10px 0px rgb(21, 20, 20);
+    margin: 10px 0px;
+}
+
+h3{
+    padding: 10px;
+    text-transform: uppercase;
+
+}
+
+.btn{
+    margin-top: 20px;
+    background: #00770a;
+    padding: 10px 25px;
+    border: none;
+    color: #ffffff;
+    border-radius: 5px;
+}
+
+.card1:hover{
+    background-color:  #00770a;
+    color: white;
+    border-color: white;
+}
+
+.card1:hover .btn{
+    background-color: rgb(255, 255, 255);
+    color:  #00770a;
+    cursor: pointer;
+}
+
+/* product card code end */
+
+/* profile card code start */
+
+.container2{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100vw;
+    height: 400px;
+    background-color: rgb(255, 255, 255);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    padding: 10px;
+}
+
+.profile img{
+    width: 100px;
+    height: 120px;
+    border: #ffffff 2px solid;
+    border-radius: 50%;
+}
+
+.card2{
+    border: 3px solid #7f00c9;
+    border-radius: 10px;
+    width: 200px;
+    padding: 20px;
+    box-shadow: 0px 5px 10px 0px rgb(21, 20, 20);
+    margin: 10px 0px;
+}
+
+h3{
+    padding: 10px;
+    text-transform: uppercase;
+
+}
+.para2{
+    padding: 20px;
+}
+
+a{
+    margin-top: 50px;
+    background: #7f00c9;
+    padding: 5px;
+    border: none;
+    color: #ffffff;
+    border-radius: 5px;
+}
+
+.card2:hover{
+    background-color:  #7f00c9;
+    color: white;
+    border-color: white;
+    transition: 0.3s;
+}
+
+.card2:hover a{
+    background-color: rgb(255, 255, 255);
+    color:  #7f00c9;
+    cursor: pointer;
+}
+
+/* profile card code start */
+
+/* flip card code start */
+
+.container3{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    position: relative;
+    width: 100%;
+    height: 500px; 
+    padding: 30px;
+    justify-content: center;
+}
+
+.card3{
+    width: 250px;
+    height: 300px;
+    transform-style: preserve-3d;
+    transition: all 1s ease;
+    border: 1px solid rgb(255, 0, 0);
+    border-radius: 10px;
+    box-shadow: 0px 8px 8px 0px;
+}
+
+.card3:hover{
+    transform: rotateY(180deg);
+}
+
+.front{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background-image: url(images/pexels-pixabay-220453.jpg);
+    background-size: cover;
+    color: white;
+    border-radius: 10px;
+
+}
+
+.front1{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background-image: url(images/pexels-christina-morillo-1181391.jpg);
+    background-size: cover;
+    color: white;
+    border-radius: 10px;
+
+}
+
+.front2{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background-image: url(images/img2.jpg);
+    background-size: cover;
+    color: white;
+    border-radius: 10px;
+
+}
+
+.back{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background-color: rgb(0, 95, 173);
+    color: white;
+    transform: rotateY(180deg);
+    border-radius: 10px;
+    justify-content: center;
+    text-align: center;
+    place-items: center;
+}
+
+
+@media screen and (min-width:200px)and (max-width:880px) {
+    .card1{
+        width: 100%;
+        flex-direction: column;
+        margin: 30px;
+    }
+}
+
+@media screen and (min-width:200px)and (max-width:880px) {
+    .card2{
+        width: 100%;
+        flex-direction: column;
+        margin: 30px;
+    }
+}
+
+@media screen and (min-width:200px) and (max-width:880px){
+    .card3{
+        width: 100%;
+        flex-direction: column;
+        margin: 0px;
+    }
+}
